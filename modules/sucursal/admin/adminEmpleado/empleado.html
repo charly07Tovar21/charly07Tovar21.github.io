@@ -1,0 +1,105 @@
+<div class="s13 justify-content-center">
+    <script src="controllerEmpleado.js"></script>
+    <h3 class="col-12 d-flex justify-content-center p-4">Gestión de Empleados</h3>
+    <div class="container-fluid col-5 mt-4">
+        <label>Código:</label><br>
+        <input class="container-fluid rounded-2" type="text" id="txtCodigo" name="txtcodigo" disabled="" >
+    </div>
+    <div class="container-fluid col-6 mt-4">
+        <label>Nombre(s):</label><br>
+        <input class="container-fluid rounded-2" type="text" id="txtNombre" name="txtnombre" >
+    </div>
+    <div class="container-fluid col-5 mt-4">
+        <label>Apellidos(s):</label><br>
+        <input class="container-fluid rounded-2" type="text" id="txtApellidos" name="txtApellido" >
+    </div>
+
+    <div class="container-fluid col-6 mt-4">
+        <label>Fecha de nacimiento:</label><br>
+        <input class="container-fluid rounded-2" type="date" id="dateBirth" name="dateBirth" >
+    </div>
+    <div class="container-fluid col-5 mt-4">
+        <label>CURP:</label><br>
+        <input class="container-fluid rounded-2" type="text" id="txtCURP" name="txtCURP" >
+    </div>
+    <div class="container-fluid col-6 mt-4">
+        <label>RFC:</label><br>
+        <input class="container-fluid rounded-2" type="text" id="txtRFC" name="txtRFC" >
+    </div>
+    <div class="container-fluid col-5 mt-4">
+        <label>Género:</label><br>
+        <select required id="txtGenero" class="container-fluid rounded-2 ">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">Otro</option>
+        </select>
+    </div>
+    <div class="container-fluid col-6 mt-4">
+        <label>Dirección:</label><br>
+        <input class="container-fluid rounded-2" type="text" id="txtDireccion" name="txtDireccion" >
+    </div>
+    <div class="container-fluid col-5 mt-4">
+        <label>Teléfono:</label><br>
+        <input class="container-fluid rounded-2" type="text" id="txtTelefono" name="telefono" >
+    </div>
+    <div class="container-fluid col-6 mt-4">
+        <label>Correo electrónico:</label><br>
+        <input class="container-fluid rounded-2" type="text" id="txtCorreo" name="txtCorreo" >
+    </div>
+    <div class="container-fluid col-5 mt-4">
+        <label>Sucursal:</label><br>
+        <select required id="txtSucursal" class="container-fluid rounded-2">
+            <option value="Centro">Centro</option>
+            <option value="Centro Max">Centro Max</option>
+            <option value="Futurama Monterrey">Futurama Monterrey</option>
+            <option value="Plaza Mayor">Plaza Mayor</option>
+        </select>
+    </div>
+    <div class="container-fluid col-6 mt-4">
+        <label>Fecha de ingreso:</label><br>
+        <input class="container-fluid rounded-2" type="date" id="dateIngreso" name="dateBirth" >
+    </div>
+
+    <div class="container-fluid col-5 mt-4 ">
+        <label>Puesto:</label><br>
+        <select required id="txtPuesto" class="container-fluid rounded-2">
+            <option value="Vendedor">Vendedor</option>
+            <option value="Administrador">Administrador</option>
+        </select>
+    </div>
+    <div class="d-flex justify-content-between mt-4">
+        <button class="btn btn-success m-3" onclick="moduloLogin1.addEmpleado()" id="btnAdd">Registrar</button>
+        <button class="btn btn-warning m-3" onclick="moduloLogin1.updateEmpleado()" id="btnUpdate">Actualizar</button>
+        <button class="btn btn-secondary m-3" onclick="moduloLogin1.clean()" id="btnClean">Limpiar</button>
+        <button class="btn btn-danger m-3" onclick="moduloLogin1.deleteEmpleado()" id="btnDelete">Eliminar</button>
+    </div>
+</div>
+
+<div class="s14">
+    <div class="col-12 d-flex justify-content-center ">
+        <input id="buscarEmpleado" type="search" placeholder="Buscar empleado" class="col-4" >
+        <button class="btn btn-primary m-3" onclick="moduloLogin1.searchEmpleado()" id="btnBuscar">Buscar</button>
+    </div>
+
+    <div class="table-responsive d-flex justify-content-center align-content-center pt-4">
+        <table class="table-bordered container-fluid">
+            <thead class="text-white text-center">
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Sucursal</th>
+                    <th>Puesto</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody id="tblEmpleados" class="text-center">
+            </tbody>
+        </table>
+    </div>
+    <div class="imprimir d-flex justify-content-end ">
+        <button class="btn btn-primary m-3 ">Imprimir reporte</button>
+    </div>
+</div>
+
+<script src="adminEmpleado.js"></script>

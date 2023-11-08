@@ -1,0 +1,54 @@
+[
+    {
+        "codigo": 1,
+        "nombre_suc": "Centro", 
+        "longitud": "21.1667589", 
+        "latitud": "-101.6447726", 
+        "direccion": "Centro, León, Gto.", 
+        "cod_postal": "37000", 
+        "nombre_tit": "Alejandro González Hernández", 
+        "rfc": "GOHA891115754",
+        "genero": "Masculino", 
+        "telefono": "4772986232",
+        "estatus": "Activo"
+    },
+    {
+        "codigo": 2,
+        "nombre_suc": "Centro Max", 
+        "longitud": "-101.6903115", 
+        "latitud": "21.1260116", 
+        "direccion": "Blvd. Adolfo López Mateos 2510, Jardines de Jerez, León, Gto., México", 
+        "cod_postal": "37530", 
+        "nombre_tit": "María Rodríguez López", 
+        "rfc": "ROLM900615HY5",
+        "genero": "Femenino", 
+        "telefono": "4775897421",
+        "estatus": "Activo"
+    },
+    {
+        "codigo": 3,
+        "nombre_suc": "Plaza Mayor", 
+        "longitud": "-101.6609483", 
+        "latitud": "21.1505476", 
+        "direccion": "Blvd. Juan Alonso de Torres 2001, Predio el Salitre, León, Gto., México.", 
+        "cod_postal": "37175", 
+        "nombre_tit": "Juan Pérez García", 
+        "rfc": "PEGJ850720KU8",
+        "genero": "Masculino", 
+        "telefono": "4772345678",
+        "estatus": "Activo"
+    },
+    {
+        "codigo": 4,
+        "nombre_suc": "Futurama Monterrey", 
+        "longitud": "-101.6894878", 
+        "latitud": "21.1407198", 
+        "direccion": " Colonia Futurama, León, Guanajuato, México", 
+        "cod_postal": "37480", 
+        "nombre_tit": "Ana López Ramírez", 
+        "rfc": "LORA880512PG3",
+        "genero": "Femenino", 
+        "telefono": "4778765432",
+        "estatus": "Activo"
+    }
+]

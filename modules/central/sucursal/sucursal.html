@@ -1,0 +1,81 @@
+<div class="content">
+    <div class="s13 justify-content-center">
+        <h3 class="col-12 d-flex justify-content-center p-4">Gestión de Sucursales</h3>
+        <div class="container-fluid col-5 mt-4">
+            <label>Nombre de la Sucursal:</label><br>
+            <input class="container-fluid rounded-2" type="text" id="txtSucursal" name="txtSucursal" >
+        </div>
+        <div class="container-fluid col-6 mt-4">
+            <label>Nombre de la persona titular:</label><br>
+            <input class="container-fluid rounded-2" type="text" id="txtNombre" name="txtNombre" >
+        </div>
+        <div class="container-fluid col-5 mt-4">
+            <label>Longitud:</label><br>
+            <input class="container-fluid rounded-2" type="text" id="txtLongitud" name="longitud" >
+        </div>
+        <div class="container-fluid col-6 mt-4">
+            <label>RFC del titular:</label><br>
+            <input class="container-fluid rounded-2" type="text" id="txtRFC" name="txtRFC" >
+        </div>
+        <div class="container-fluid col-5 mt-4">
+            <label>Latitud:</label><br>
+            <input class="container-fluid rounded-2" type="text" id="txtLatitud" name="latitud" >
+        </div>
+        <div class="container-fluid col-6 mt-4">
+            <label>Género:</label><br>
+            <select required id="txtGenero" class="container-fluid rounded-2 ">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
+        <div class="container-fluid col-5 mt-4">
+            <label>Dirección:</label><br>
+            <input class="container-fluid rounded-2" type="text" id="txtDireccion" name="txtDireccion" >
+        </div>
+        <div class="container-fluid col-6 mt-4">
+            <label>Teléfono:</label><br>
+            <input class="container-fluid rounded-2" type="text" id="txtTelefono" name="txtTelefono" >
+        </div>
+        <div class="container-fluid col-5 mt-4">
+            <label>Código Postal:</label><br>
+            <input class="container-fluid rounded-2" type="text" id="txtCP" name="CPostal" >
+        </div>
+        <div class="container-fluid col-6 mt-4">
+            <label>Código:</label><br>
+            <input class="container-fluid rounded-2" type="text" id="txtCodigo" name="txtCodigo" disabled="" >
+        </div>
+        <img class="pt-5" src="../../img/croquis.png" alt="" width="300px"/>
+        <div class="d-flex justify-content-between mt-5">
+            <button class="btn btn-success m-3" onclick="moduloLogin1.addSucursal()" id="btnAdd">Registrar</button>
+            <button class="btn btn-warning m-3" onclick="moduloLogin1.updateSucursal()" id="btnUpdate">Actualizar</button>
+            <button class="btn btn-secondary m-3" onclick="moduloLogin1.clean()" id="btnClean">Limpiar</button>
+            <button class="btn btn-danger m-3" onclick="moduloLogin1.deleteSucursal()" id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+
+    <div class="s14 ">
+        <div class="col-12 d-flex justify-content-center ">
+        <input id="buscarSucursal" type="search" placeholder="Buscar sucursal" class="col-4" >
+        <button class="btn btn-primary m-3" onclick="moduloLogin1.searchSucursal()" id="btnBuscar">Buscar</button>
+        </div>
+
+        <div class="table-responsive d-flex justify-content-center align-content-center pt-4">
+            <table class="table-bordered container-fluid">
+                <thead class="text-white text-center">
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Titular</th>
+                <th>Domicilio</th>
+                <th>Telefono</th>
+                <th>Estatus</th>
+                </thead>
+                <tbody id ="tblSucursales" class="text-center">  
+                </tbody>
+            </table>
+        </div>
+        <div class="imprimir d-flex justify-content-end ">
+            <button class="btn btn-primary m-3 ">Imprimir reporte</button>
+        </div>
+        <script src="controllerSucursal.js"></script>
+    </div>
